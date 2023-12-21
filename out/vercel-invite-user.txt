@@ -1,0 +1,23 @@
+TEST VUE EMAIL COMPONENTS
+
+
+JOIN MY PROJECT ON VERCEL
+
+Hello John Doe,
+
+bukinoshita ( anpch@example.com [anpch@example.com] ) has invited you to the My
+project team on Vercel.
+
+
+
+Join the team [https://vercel.com/teams/invite/foo]
+
+or copy and paste this URL into your browser:
+https://vercel.com/teams/invite/foo [https://vercel.com/teams/invite/foo]
+
+--------------------------------------------------------------------------------
+
+This invitation was intended for John Doe.This invite was sent from 172.0.0.1
+located in San Francisco, CA. If you were not expecting this invitation, you can
+ignore this email. If you are concerned about your account's safety, please
+reply to this email to get in touch with us.

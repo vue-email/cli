@@ -12,4 +12,14 @@ export default defineBuildConfig({
       exportConditions: ['production', 'node'] as any,
     },
   },
+  externals: [
+    '@nuxt/test-utils',
+    'node:url',
+    'node:buffer',
+    'node:path',
+    'node:child_process',
+    'node:process',
+    'node:path',
+    'node:os',
+  ],
 })

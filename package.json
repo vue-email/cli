@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.11.0",
-  "description": "_description_",
+  "description": "⚡️ Vue Email Generation CLI Experience",
   "author": "Younes Barrad <younesbarraddev@gmail.com>",
   "license": "MIT",
   "maintainers": [
@@ -51,23 +51,28 @@
     "prepare": "simple-git-hooks",
     "vue-email": "node ./bin/vue-email.mjs"
   },
+  "dependencies": {
+    "@vue-email/compiler": "^0.8.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.4.0",
     "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.6",
     "@types/node": "^20.10.4",
+    "@types/pretty": "^2.0.3",
     "bumpp": "^9.2.0",
     "citty": "^0.1.5",
+    "consola": "^3.2.3",
     "eslint": "^8.55.0",
     "esno": "^4.0.0",
     "lint-staged": "^15.2.0",
+    "pathe": "^1.1.1",
     "pnpm": "^8.11.0",
-    "rimraf": "^5.0.5",
+    "pretty": "^2.0.0",
+    "scule": "^1.1.1",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
-    "unbuild": "^2.0.0",
-    "vite": "^5.0.6",
-    "vitest": "^1.0.2"
+    "unbuild": "^2.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

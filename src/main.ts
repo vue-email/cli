@@ -1,5 +1,6 @@
 import { defineCommand } from 'citty'
 import pkg from '../package.json' assert { type: 'json' }
+import { commands } from './commands'
 
 export const main = defineCommand({
   meta: {
@@ -7,18 +8,5 @@ export const main = defineCommand({
     version: pkg.version,
     description: pkg.description,
   },
-  args: {
-    name: {
-      type: 'positional',
-      description: 'Your name',
-      required: true,
-    },
-    friendly: {
-      type: 'boolean',
-      description: 'Use friendly greeting',
-    },
-  },
-  run({ args }) {
-    console.log(`${args.friendly ? 'Hi' : 'Greetings'} ${args.name}!`)
-  },
+  subCommands: commands,
 }) as any

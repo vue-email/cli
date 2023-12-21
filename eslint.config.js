@@ -11,6 +11,7 @@ export default antfu(
     rules: {
       // overrides
       'no-console': 'off',
+      'node/prefer-global/process': 'off',
     },
   },
 )
