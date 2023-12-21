@@ -1,10 +1,10 @@
-import { readdir, writeFile } from 'node:fs/promises'
-import { mkdirSync } from 'node:fs'
+import { outputFile } from 'fs-extra'
 import { config } from '@vue-email/compiler'
 import { defineCommand } from 'citty'
 import { resolve } from 'pathe'
 import pretty from 'pretty'
 import { consola } from 'consola'
+import fg from 'fast-glob'
 
 export default defineCommand({
   meta: {
@@ -42,15 +42,12 @@ export default defineCommand({
     const textArg = ctx.args.text
 
     const vueEmail = config(dir, { verbose: false })
-    const components = await readdir(dir)
-    const emails = components.filter(c => c.endsWith('.vue'))
+    const emails = await fg(['**/*.vue'], { cwd: dir })
 
     if (!emails.length) {
       consola.error(`No Emails found in ${dir}`)
       process.exit(1)
     }
-
-    mkdirSync(out, { recursive: true })
 
     if (textArg)
       consola.info(`✨ Generating text versions of emails`)
@@ -62,11 +59,12 @@ export default defineCommand({
       const html = rendered.html
       const text = rendered.text
       const name = email.replace('.vue', '')
+      const fileName = textArg ? `${name}.txt` : `${name}.html`
 
       if (textArg)
-        await writeFile(resolve(out, `${name}.txt`), text)
+        await outputFile(resolve(out, fileName), text)
       else
-        await writeFile(resolve(out, `${name}.html`), prettyArg ? pretty(html) : html)
+        await outputFile(resolve(out, fileName), prettyArg ? pretty(html) : html)
 
       consola.info(`🪄 Generated ${name}`)
     }
