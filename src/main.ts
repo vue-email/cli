@@ -4,7 +4,7 @@ import { commands } from './commands'
 
 export const main = defineCommand({
   meta: {
-    name: 'vue-email',
+    name: pkg.name,
     version: pkg.version,
     description: pkg.description,
   },
