@@ -13,12 +13,12 @@ export default defineCommand({
   },
   args: {
     dir: {
-      type: 'positional',
+      type: 'string',
       description: 'The directory where the emails are located.',
       default: 'emails',
     },
     out: {
-      type: 'positional',
+      type: 'string',
       description: 'The directory where the emails will be exported.',
       default: 'out',
     },
