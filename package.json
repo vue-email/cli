@@ -1,5 +1,5 @@
 {
-  "name": "vemail",
+  "name": "@vue-email/cli",
   "type": "module",
   "version": "0.0.2",
   "packageManager": "pnpm@8.11.0",
@@ -38,7 +38,6 @@
   },
   "types": "./dist/index.d.ts",
   "bin": {
-    "vemail": "./bin/vue-email.mjs",
     "vue-email": "./bin/vue-email.mjs",
     "vue-email-cli": "./bin/vue-email.mjs",
     "vuemail": "./bin/vue-email.mjs"
