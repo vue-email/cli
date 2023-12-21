@@ -18,7 +18,7 @@
       "url": "https://github.com/Flowko"
     }
   ],
-  "homepage": "https://vuemail.net/",
+  "homepage": "https://vuemail.net/plugins/cli",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vue-email/cli.git"
