@@ -52,6 +52,11 @@ export default defineCommand({
 
     mkdirSync(out, { recursive: true })
 
+    if (textArg)
+      consola.info(`✨ Generating text versions of emails`)
+    else
+      consola.info(`✨ Generating HTML versions of emails`)
+
     for (const email of emails) {
       const rendered = await vueEmail.render(email)
       const html = rendered.html
