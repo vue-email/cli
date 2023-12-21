@@ -38,9 +38,9 @@
   },
   "types": "./dist/index.d.ts",
   "bin": {
-    "vue-email": "bin/vue-email.mjs",
-    "vue-email-cli": "bin/vue-email.mjs",
-    "vuemail": "bin/vue-email.mjs"
+    "vue-email": "./bin/vue-email.mjs",
+    "vue-email-cli": "./bin/vue-email.mjs",
+    "vuemail": "./bin/vue-email.mjs"
   },
   "files": [
     "bin",
