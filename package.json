@@ -59,28 +59,28 @@
     "vue-email": "node ./bin/vue-email.mjs"
   },
   "dependencies": {
-    "@vue-email/compiler": "^0.8.5"
+    "@vue-email/compiler": "^0.8.8"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.0",
+    "@antfu/eslint-config": "^2.6.3",
     "@antfu/ni": "^0.21.12",
-    "@antfu/utils": "^0.7.6",
+    "@antfu/utils": "^0.7.7",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.11.5",
     "@types/pretty": "^2.0.3",
-    "bumpp": "^9.2.0",
+    "bumpp": "^9.3.0",
     "citty": "^0.1.5",
     "consola": "^3.2.3",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "esno": "^4.0.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "jiti": "^1.21.0",
     "lint-staged": "^15.2.0",
-    "pathe": "^1.1.1",
-    "pnpm": "^8.11.0",
+    "pathe": "^1.1.2",
+    "pnpm": "^8.14.1",
     "pretty": "^2.0.0",
-    "scule": "^1.1.1",
+    "scule": "^1.2.0",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
     "unbuild": "^2.0.0"
