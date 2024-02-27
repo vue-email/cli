@@ -59,7 +59,7 @@
     "vue-email": "node ./bin/vue-email.mjs"
   },
   "dependencies": {
-    "@vue-email/compiler": "^0.8.13"
+    "@vue-email/compiler": "^0.8.14"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
